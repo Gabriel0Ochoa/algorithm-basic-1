@@ -2,13 +2,14 @@ Algoritmo Calculadora
 	
     Definir num1, num2, resultado Como Real
     Definir operacion, continuar Como Caracter
-	
+
+
     Repetir
-        Escribir "Ingrese el primer número:"
+        Escribir "Ingrese el primer nÃºmero:"
         Leer num1
-        Escribir "Ingrese el segundo número:"
+        Escribir "Ingrese el segundo nÃºmero:"
         Leer num2
-        Escribir "Ingrese la operación (+, -, *, /):"
+        Escribir "Ingrese la operaciÃ³n (+, -, *, /,pi*):"
         Leer operacion
 		
         Segun operacion Hacer
@@ -18,19 +19,35 @@ Algoritmo Calculadora
                 resultado <- num1 - num2
             "*":
                 resultado <- num1 * num2
+			"pi*":
+                resultado1 <- num1 * pi
+				resultado2 <- num2 * pi
             "/":
                 Si num2 = 0 Entonces
-                    Escribir "Error: División por cero"
+                    Escribir "Error: DivisiÃ³n por cero"
                 SiNo
                     resultado <- num1 / num2
                 FinSi
             De Otro Modo:
-                Escribir "Operación inválida"
+                Escribir "OperaciÃ³n invÃ¡lida"
         FinSegun
 		
         Escribir "El resultado es:", resultado
+		Si resultado1 = 0 Entonces
+			
+		FinSi
+		Si resultado1 > 0 Entonces
+			Escribir "El resultado de pi* es", resultado1
+		FinSi
 		
-        Escribir "¿Desea continuar? (s/n):"
+		Si resultado2 = 0 Entonces
+			
+		FinSi
+		Si resultado2 > 0 Entonces
+			Escribir "El resultado de pi* es", resultado2
+		FinSi
+		
+        Escribir "Â¿Desea continuar? (s/n):"
         Leer continuar
     Hasta Que Mayusculas(continuar) <> "S"
 	
