@@ -1,19 +1,15 @@
 Algoritmo calcular_edad
-    // Declaración de variables
+
     Definir nombre Como Caracter
     Definir edad Como Entero
 	
-    // Entrada de datos
     Escribir "Ingrese su nombre:"
     Leer nombre
-    Escribir "Ingrese el año que nacio:"
+    Escribir "Ingrese el aÃ±o que nacio:"
     Leer edad
 	
-    // Proceso
-    
-    año <- edad + (100)
+    aÃ±o <- edad + (100)
 	
-    // Salida
-    Escribir "Hola", nombre ", cumplirás 100 años en el año ", año
+    Escribir "Hola", nombre ", cumplirÃ¡s 100 aÃ±os en el aÃ±o ", aÃ±o
 	
 FinAlgoritmo
