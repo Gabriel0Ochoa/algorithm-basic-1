@@ -6,7 +6,7 @@ def numero(mensaje):
             numero = float(input(mensaje))
             return numero
         except ValueError:
-            print("Por favor, ingrese un número válido.")
+            print("Por favor, ingrese solo digitos o cifras en numeros.")
 
 def operacion0(mensaje):
     operaciones1 = ['+', '-', '*', '/', 'pi*']
