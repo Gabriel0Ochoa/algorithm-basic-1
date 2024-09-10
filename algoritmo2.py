@@ -11,9 +11,9 @@ def numero(mensaje):
 def operacion0(mensaje):
     operaciones1 = ['+', '-', '*', '/', 'pi*']
     while True:
-        operacion = input(mensaje)
-        if operacion in operaciones1:
-            return operacion
+        operacion2 = input(mensaje)
+        if operacion2 in operaciones1:
+            return operacion2
         else:
             print("Operación inválida. Opciones válidas:", operaciones1)
 
